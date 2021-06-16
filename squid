@@ -1,1 +1,4 @@
 https://preliminary.istio.io/latest/docs/tasks/traffic-management/egress/http-proxy/
+
+kubectl patch svc <svc-name> -n <namespace> -p '{"spec": {"type": "LoadBalancer", "externalIPs":["172.31.71.218"]}}'
+
